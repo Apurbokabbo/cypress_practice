@@ -17,19 +17,39 @@ describe("checkbox", () => {
     let option2_value = "option2";
     let option3_value = "option3";
     
-    //single check
-    cy.xpath(radio_button).check()
-    // cy.xpath(radio_button).click()
-    cy.xpath(option1_xpath).check()
-    cy.xpath(option2_xpath).check().should("be.enabled").and("have.value", option2_value)
-    cy.xpath(option3_xpath).check().should("be.enabled").and("have.value", option3_value)
+    // //single check
+    // cy.xpath(radio_button).check()
+    // // cy.xpath(radio_button).click()
+    // cy.xpath(option1_xpath).check()
+    // cy.xpath(option2_xpath).check().should("be.enabled").and("have.value", option2_value)
+    // cy.xpath(option3_xpath).check().should("be.enabled").and("have.value", option3_value)
 
-    cy.wait(1000);
+    // cy.wait(1000);
 
-    //uncheck
-    cy.xpath(option1_xpath).click()
-    cy.xpath(option2_xpath).uncheck()
-    cy.xpath(option3_xpath).uncheck()
+    // //uncheck
+    // cy.xpath(option1_xpath).click()
+    // cy.xpath(option2_xpath).uncheck()
+    // cy.xpath(option3_xpath).uncheck()
+
+    // //multiplecheck
+    // cy.get("input[type=checkbox]").check([option1_value,option2_value])
+
+    // //uncheckmultiple
+    
+    // cy.get("input[type=checkbox]").uncheck([option1_value,option2_value])
+
+    //function calling 
+    checkboxSelector(option2_xpath,"check",option2_value)
+
 
 });
+
+
 });
+function checkboxSelector(xpath, options, value) {
+    if (options === "check") {
+        cy.xpath(xpath).check().should("be.enabled").and("have.value", value);
+    } else if (options === "uncheck") {
+        cy.xpath(xpath).uncheck().should("be.enabled").and("have.value", value);
+    }
+} 
