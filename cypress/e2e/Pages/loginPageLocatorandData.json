@@ -1,0 +1,16 @@
+{
+    "user_name_input_field" : "//input[@class='flex h-10 border-none bg-[#FAFAFA] text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50 border border-gray-400 rounded-lg py-4 px-12 w-full' and @placeholder='Email' and @type='email']",
+    "password_input_field" : "//button[@class='inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-ring-none focus-visible:ring-offset-0 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-4 py-2 w-full my-4' and @type='submit' and text()='Sign In']",
+    "sign_in_button" : "//button[contains(text(),'Sign In')]",
+    "otp_input_field" : "//input[@class='flex h-10 w-full rounded-md border-none border-input bg-[#FAFAFA] px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-0 disabled:cursor-not-allowed disabled:opacity-50' and @aria-label='Please enter OTP character 1' and @type='text']",
+    "submit_button" : "//button[contains(text(),'Submit')]",
+
+
+
+    "user_name" : "kabbo@newroztech.com",
+    "password" : "Password100@",
+    "otp" : "123456"
+
+
+
+}
